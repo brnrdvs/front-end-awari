@@ -1,0 +1,24 @@
+h1 {
+    color:brown;
+    font-size: xx-large;
+    text-align: center;
+}
+
+h2 { 
+    color:blue;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium';
+}
+
+article {
+    background-color: rgb(201, 200, 200);
+    margin: 5%;
+    display: block;
+    padding: 1% 2%;
+}
+
+section
+{
+    margin: 5%;
+    text-align: center;
+}
