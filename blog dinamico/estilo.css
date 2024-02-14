@@ -1,0 +1,19 @@
+h1 {
+    color:blue;
+    text-align: center;
+}
+
+.textos {
+    padding:5%;
+    background-color: grey;
+    text-align: right;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
