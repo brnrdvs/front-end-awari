@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html { 
+    height: 100%;
+}
+
+body {
+    background-color: aquamarine;
+    height:100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil {
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 30%;
+}
+
+.topo-perfil {
+    align-items: center;
+    border-bottom: 1px solid rosybrown;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.imagem {
+    border-radius: 50%;
+    display: inline;
+    height: 100%;
+    width: auto;
+}
+
+.username {
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.descricao-perfil {
+    border-bottom: 1px solid rosybrown;
+    margin-bottom: 10px;
+}
+
+.paragrafo {
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.links {
+    list-style: none;
+}
+
+.link {
+    font-size: small;
+}
