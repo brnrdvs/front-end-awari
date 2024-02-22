@@ -114,19 +114,55 @@ function exercicio2()
     }, 200);
 }
 
+function funcao1()
+{
+    let num=document.getElementById('numero').value;
+
+    let numeros=document.createElement('p');
+
+    numeros.innerHTML=num;
+    conteudo.appendChild(numeros);
+
+    event.preventDefault;
+
+    
+
+    /*if (typeof num==="number")
+    {
+        let intervalo=setInterval(function() { 
+            contagem(num); 
+            num--; 
+            if (num<1) { clearInterval(intervalo); }
+        }, 200); 
+    }
+
+    else 
+    { 
+        window.alert('Não é número');
+        document.getElementById('numeros').reset;
+    }*/
+
+    //if (typeof num==="string") { header.innerHTML='a'; }
+}
+
 function exercicio3()
 {
     reformular(3);
 
-    let form=document.createElement('form'), label=document.createElement('label'), input=document.createElement('input');
-    
-    label.setAttribute('for','numero');
-    label.appendChild(form);
+    let form=document.createElement('form'), input=document.createElement('input'), botao=document.createElement('input');
 
-    input.setAttribute('type','text');
-    input.setAttribute('name','numero');
+    form.setAttribute('onsubmit','funcao1()');
+
+    input.type='text';
     input.id='numero';
-    input.appendChild(form);
+    input.name='numero';
+    input.placeholder='Insira o número';
+
+    botao.type='submit';
+    botao.value='Enviar';
+
+    form.appendChild(input);
+    form.appendChild(botao);
 
     conteudo.appendChild(form);
 }
