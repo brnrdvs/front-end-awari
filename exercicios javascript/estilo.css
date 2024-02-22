@@ -2,9 +2,18 @@ body {
     background-color:darkgray;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 20vw auto auto;
+    grid-template-rows: 50px calc(90vh - 100px - 10px) 50px;
 }
 
-h1 {
+h1 {1
     font-weight: bolder;
     color:darkred;
     font-size:x-large;
@@ -16,16 +25,17 @@ a {
 }
 
 .header {
-    margin-top: 5%;
+    grid-area: header;
+    padding: 10px;
 }
 
 .conteudo {
-    margin-top: 5%;
+    grid-area: main;
+    padding: 10px;
+    height: 100px;
 }
 
 .footer {
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    align-items:flex-end;
+    grid-area: footer;
+    margin-bottom: 5%;
 }
