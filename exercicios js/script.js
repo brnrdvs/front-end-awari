@@ -1,13 +1,13 @@
 const idades=[15, 35, 33, 12, 76, 34, 28, 98, 44, 26];
 
 console.log('EXERCICIO 1: ');
-console.log(contagem(1,1,10));
+console.log(contagem(1,10));
 
 console.log('EXERCICIO 2: ');
-console.log(contagem(-1,10,1));
+console.log(contagem(10,1));
 
 console.log('EXERCICIO 3: ');
-console.log(contagem(1,74,97));
+console.log(contagem(74,97));
 
 console.log('EXERCICIO 4: ');
 console.log(calcularPrimos(100));
@@ -34,9 +34,15 @@ console.log('EXERCICIO 11: ');
 triangulo(12);
 
 
-function contagem(razao, inicio, fim)
+function contagem(inicio, fim)
 {
     let numeros='.';
+    let razao=1;
+
+    if (inicio>fim)
+    {
+        razao=-1;
+    }
 
     while (inicio!=fim+razao) 
     {
